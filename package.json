@@ -1,10 +1,13 @@
 {
   "name": "remix-fathom",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "A hook to quickly add Fathom to your Remix app.",
-  "main": "index.js",
+  "main": "build/index.js",
+  "files": [
+    "build/index.js"
+  ],
   "scripts": {
-    "build": "swc ./src -d build"
+    "build": "tsc"
   },
   "keywords": [
     "Remix",
@@ -17,12 +20,13 @@
   "peerDependencies": {
     "fathom-client": "^3.4.1",
     "react": "^18.0.0",
-    "react-dom": "^18.0.0",
     "react-router-dom": "^6.3.0"
   },
   "devDependencies": {
     "@swc/cli": "^0.1.57",
     "@swc/core": "^1.2.163",
-    "@types/react": "^17.0.43"
+    "@types/node": "^17.0.23",
+    "@types/react": "^17.0.43",
+    "tsc": "^2.0.4"
   }
 }
