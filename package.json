@@ -4,10 +4,10 @@
   "description": "A hook to quickly add Fathom to your Remix app.",
   "main": "build/index.js",
   "files": [
-    "build/index.js"
+    "build"
   ],
   "scripts": {
-    "build": "tsc"
+    "build": "tsc src/index.ts --outDir build -d"
   },
   "keywords": [
     "Remix",
