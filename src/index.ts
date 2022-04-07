@@ -1,6 +1,7 @@
 import { useRef, useEffect, useCallback } from "react";
 import * as Fathom from "fathom-client";
 import { useLocation } from "react-router-dom";
+
 export function useFathom(id: string, opts: Fathom.LoadOptions = {}) {
   let fathomLoaded = useRef(false);
   let location = useLocation();
