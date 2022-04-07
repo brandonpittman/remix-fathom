@@ -1,4 +1,4 @@
-import { useRef, useEffect } from "react";
+import { useRef, useEffect, useCallback } from "react";
 import * as Fathom from "fathom-client";
 import { useLocation } from "react-router-dom";
 export function useFathom(id: string, initialOpts: Fathom.LoadOptions = {}) {
@@ -21,5 +21,5 @@ export function useFathom(id: string, initialOpts: Fathom.LoadOptions = {}) {
 }
 
 export function useGoal(code: string, cents: number) {
-  return () => Fathom.trackGoal(code, cents);
+  return useCallback(() => Fathom.trackGoal(code, cents), [code, cents]);
 }
