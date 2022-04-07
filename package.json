@@ -1,6 +1,6 @@
 {
   "name": "remix-fathom",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A hook to quickly add Fathom to your Remix app.",
   "main": "build/index.js",
   "files": [
