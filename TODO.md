@@ -1,0 +1,1 @@
+- support `fathom.config.js`
