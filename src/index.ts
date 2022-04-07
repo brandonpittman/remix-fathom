@@ -1,22 +1,22 @@
 import { useRef, useEffect, useCallback } from "react";
 import * as Fathom from "fathom-client";
 import { useLocation } from "react-router-dom";
-export function useFathom(id: string, initialOpts: Fathom.LoadOptions = {}) {
+export function useFathom(id: string, opts: Fathom.LoadOptions = {}) {
   let fathomLoaded = useRef(false);
   let location = useLocation();
 
-  const { current: opts } = useRef(initialOpts);
+  const optsRef = useRef(opts);
 
   useEffect(
     function setupFathom() {
       if (!fathomLoaded.current) {
-        Fathom.load(id, opts);
+        Fathom.load(id, optsRef.current);
         fathomLoaded.current = true;
       } else {
         Fathom.trackPageview();
       }
     },
-    [id, location, opts]
+    [id, location]
   );
 }
 
