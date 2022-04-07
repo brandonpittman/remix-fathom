@@ -37,4 +37,9 @@ Supply your Fathom site ID and optional opts object to configure [fathom-client]
 
 This hook returns you a memoized function pre-populated with your provided code and cents.
 
+
+Thanks to Sergio Xalambrí for the [inspiration][]!
+
+[inspiration]: https://sergiodxa.com/articles/use-fathom-with-remix
 [fathom-client]: https://www.npmjs.com/package/fathom-client
+
