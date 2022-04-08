@@ -18,9 +18,9 @@
   "author": "Brandon Pittman",
   "license": "MIT",
   "peerDependencies": {
+    "@remix-run/react": "^1.3.5",
     "fathom-client": "^3.4.1",
-    "react": "^18.0.0",
-    "react-router-dom": "^6.3.0"
+    "react": "^18.0.0"
   },
   "devDependencies": {
     "@swc/cli": "^0.1.57",
