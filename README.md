@@ -13,13 +13,11 @@ The following peer dependencies are required:
 - `fathom-client`
 - `react-router-dom`
 
-Remix has `react-router-dom` under the hood, but you may want to run
+### Install `fathom-client`
 
 ```sh
-npm install fathom-client react-router-dom
+npm install fathom-client
 ```
-
-…to make things clear (or you're using PNPM).
 
 Then in `app/root.tsx`, add
 
